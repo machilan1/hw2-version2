@@ -1,7 +1,8 @@
-import { Component ,OnInit, HostListener} from '@angular/core';
+import { Component ,OnInit, AfterViewInit} from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { CommonModule } from '@angular/common';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+
    export interface Card{
     picture:string;
     pictureHover:string;
@@ -20,6 +21,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     showtitle:string;
     cards:Card[];
   }
+
+
 @Component({
   imports:[CardComponent,CommonModule,ScrollingModule],
   standalone:true,
@@ -27,19 +30,21 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit{
-  
+
   isAtHome:boolean=true;
-  
   onTop =true;
+
+
   ngOnInit(): void {
-   
-  }
+
+      }
 
 
   sections:Sections[]=[
     {
-      slide:false,
+      slide:true,
       slideImg:[{url:' /assets/img/home/banner1-1.webp'},{url:' /assets/img/home/banner1-2.webp'}],
       img:' /assets/img/home/banner1-2.webp',
       texts:`我喜歡你親手替我挑的花朵.我喜歡你經過那裡.便會想起我. .我喜歡和你徘徊在巷口.將你為我挑選的那束玫瑰.放入單車中..我喜歡和你共度的那個午後.將我們的情感.用花訴說`,

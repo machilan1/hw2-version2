@@ -2,7 +2,17 @@
     <div class="content-container">
         <div class="section" *ngFor="let section of sections">
             <div class="slider" *ngIf="section.slide===true">
-                Loading Slider ... 
+            <!--  -->
+            <div class="swiper" id="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let slide of section.slideImg">
+                        <img src={{slide.url}} alt="slide-not-found">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!--  -->
             </div>
             <div class="banner-picture-wrap">
                 <img class="banner-picture" *ngIf="section.slide ===!true" src={{section.img}} alt="">

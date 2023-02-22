@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <meta charset="utf-8">
   <title>WaveFlower</title>
   <base href="/">
@@ -13,7 +14,34 @@
 </head>
 <body>
   <app-root></app-root>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
   <script src="https://kit.fontawesome.com/a13fbaac12.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('#swiper1', {
+       // Optional parameters
+      
+       // If we need pagination
+       pagination: {
+           el: '.swiper-pagination',
+       },
+
+       // Navigation arrows
+       navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+       },
+
+       // And if we need scrollbar
+       scrollbar: {
+           el: '.swiper-scrollbar',
+       },
+   }
+   
+   );
+
+   
+</script>
 </body>
 </html>
