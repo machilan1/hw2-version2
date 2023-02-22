@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit{
       email:new FormControl("google@yahoo.com",Validators.email),
       phonenum:new FormControl("0988888767"),
       topic:new FormControl("Love your stuffs!",Validators.required),
-      message:new FormControl("Just to let you know I am madly in love with your products. Now I can live without my husband.",Validators.required),
+      message:new FormControl("Tou are the best!",Validators.required),
       check:new FormControl(null,Validators.required),
     
 
