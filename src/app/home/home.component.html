@@ -4,7 +4,9 @@
             <div class="slider" *ngIf="section.slide===true">
                 Loading Slider ... 
             </div>
-            <img class="banner-picture" *ngIf="section.slide ===!true" src={{section.img}} alt="">
+            <div class="banner-picture-wrap">
+                <img class="banner-picture" *ngIf="section.slide ===!true" src={{section.img}} alt="">
+            </div>
             <div class="line-container">
                 <p *ngFor="let line of section.texts.split('.')" [style.padding-bottom]="line.length==0? 0:'.5rem'">
                     {{line}}
