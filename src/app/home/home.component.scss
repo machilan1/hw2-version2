@@ -10,7 +10,18 @@
     width: 100%;
 }
 
+.slider{
+    position: relative;
+}
+
 // 
+.swiper-button-prev{
+    color: white;
+}
+.swiper-button-next{
+    color: white;
+}
+
 .swiper{
     width: 100%;
 }
@@ -44,7 +55,6 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 760px;
     font-size: 5rem;
     text-align: center;
     color: rgba(0, 0, 0, 0.178);

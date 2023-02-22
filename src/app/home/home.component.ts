@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit{
   sections:Sections[]=[
     {
       slide:true,
-      slideImg:[{url:' /assets/img/home/banner1-1.webp'},{url:' /assets/img/home/banner1-2.webp'}],
+      slideImg:[{url:' /assets/img/home/banner1-2.webp'},{url:' /assets/img/home/banner1-1.webp'}],
       img:' /assets/img/home/banner1-2.webp',
       texts:`我喜歡你親手替我挑的花朵.我喜歡你經過那裡.便會想起我. .我喜歡和你徘徊在巷口.將你為我挑選的那束玫瑰.放入單車中..我喜歡和你共度的那個午後.將我們的情感.用花訴說`,
     showtitle:"依戀系列鮮花",
