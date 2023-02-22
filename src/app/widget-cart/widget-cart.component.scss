@@ -1,0 +1,70 @@
+
+.vihicle{
+    pointer-events: none;
+    top:0;
+    right:0;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    // background-color: aqua;
+}
+
+.container{
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dimmer{
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    height:100%;
+    background-color: rgba(128, 128, 128, 0.264);
+    transition: .3s;
+}
+
+.dimmer.open{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cart-content{
+    --var-width-of-cart:420px;
+    position: absolute;
+    top:0 ;
+    right:calc((var(--var-width-of-cart))*(-1));
+    height: 100%;
+    width: var(--var-width-of-cart);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.205);   
+    transition:.3s;
+}
+
+.cart-content.open{
+    right:0;
+}
+
+.cart-title{
+    display: inline-block;
+    width: 100%;
+    padding: 3.5rem 2rem;
+    font-family: "noto Serif TC";
+    font-size: 1.875rem;
+}
+
+
+.close-btn{
+    top: 2rem;
+    right: 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: aliceblue;
+}

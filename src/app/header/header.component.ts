@@ -12,7 +12,11 @@ import { ChatComponent } from "../chat/chat.component";
 export class HeaderComponent implements OnInit{
   @Input()isOnTop!:boolean;
 
-  
+  cartIsOpen:boolean=false;
+  sendOpenSignal(){
+    return this.cartIsOpen
+  }
+
   ngOnInit(): void {
   
   }

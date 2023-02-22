@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { Router, RouterModule } from '@angular/router';
+import { WidgetCartComponent } from './widget-cart/widget-cart.component';
 @Component({
-  imports:[HeaderComponent,RouterModule],
+  imports:[HeaderComponent,RouterModule,WidgetCartComponent],
   standalone:true,
   selector: 'app-root',
   templateUrl: './app.component.html',
