@@ -1,0 +1,44 @@
+
+header{
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 1px 5px rgba(68, 59, 19, 0.1);
+}
+
+.router-outlet{
+    padding-top: 150px;
+}
+
+.router-outlet-expand{
+    padding-top: 14rem;
+}
+
+@media (max-width:1200px){
+    .router-outlet{
+        padding-top: 150px;
+    }
+    
+    .router-outlet-expand{
+        padding-top: 150px;
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    font-family: 'Noto Serif TC';
+    padding: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}

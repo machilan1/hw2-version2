@@ -1,0 +1,8 @@
+<div class="navtag">
+    <a class="title" [classList] ="atFilter? 'wider':'title'" ><span>{{tag.title}}</span><span *ngIf="tag.subtags.length>0"><i class="fa-solid fa-chevron-down"></i></span></a>
+
+    <div class="subtags"  [style]="{right: atFilter? '0':''}"   [style.width]="tag.subtags.length<6? '200px':''" *ngIf="tag.subtags.length>0">
+        <a class="subtag" href={{subtag.link}}    *ngFor="let subtag of tag.subtags">{{subtag.subtag}}</a>
+    </div>
+
+</div>

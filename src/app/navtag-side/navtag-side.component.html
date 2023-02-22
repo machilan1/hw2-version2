@@ -1,0 +1,8 @@
+<div class="navtag" (click)="isOpen =!isOpen;setHeight()" >
+    <a class="title" ><span class="title-tag">{{tag.title}}</span><span *ngIf="tag.subtags.length>0"><i [style]="{transform: isOpen? 'rotate(180deg)':''}"  class="fa-solid fa-chevron-down"></i></span></a>
+
+    <div class="subtags" [style]="{height: isOpen?  subHeight:'0'}" *ngIf="tag.subtags.length>0">
+        <a class="subtag"href={{subtag.link}} *ngFor="let subtag of tag.subtags">{{subtag.subtag}}</a>
+    </div>
+
+</div>

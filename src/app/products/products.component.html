@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="topbar">全部商品</div>
+    <div class="content-container">
+        <aside class="sidebar">
+            <h1>分類</h1>
+            <div class="subline"></div>
+            <div class="tag-container">
+                <app-navtag-side *ngFor="let tag of tags" [tag]="tag"></app-navtag-side>
+            </div>
+        </aside>
+        <div class="product-container">
+            <div class="filterbar">
+                <app-navtag *ngFor="let tag of filterTags"  [tag] ="tag" [inFilter]="atFilter"></app-navtag>
+            </div>
+            <div class="products">
+                <app-card *ngFor="let card of cards" [card] ='card' ></app-card>
+            </div>
+
+            <div class="pager-container">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">></a>
+            </div>
+        </div>
+    </div>
+
+</div>

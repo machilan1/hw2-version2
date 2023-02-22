@@ -1,0 +1,55 @@
+
+form{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(73, 73, 73, 0.096);
+    // background-color: aqua;
+}
+.form-wrap{
+    min-width: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    margin: 1rem 0;
+}
+.input-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.input-container > div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: .4rem;
+}
+.input-container > div >input{
+    border: 2px solid var(--primary-color);
+}
+
+.username,.email,.phonenum,.topic{
+    width: 90%;
+    height: 1.5rem;
+    padding-left: .3rem;
+    margin-bottom: .4rem;
+    
+}
+
+textarea{
+    width: 100%;
+    min-height: 10rem;
+    resize: none;
+    padding-left: .3rem;
+}
+
+.consent{
+    margin: 1rem;
+}

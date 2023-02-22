@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="form-wrap">
+        <form [formGroup]="contactForm">
+            <p>請留下您寶貴的意見，我們將盡快與您聯繫!</p>
+            <p>或撥打客服專線0900-xxx-xxx (上班時間 週一至周週五 08:00-12:00、13:00-17:00)</p>
+            <div class="input-container">
+                <div class="">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input class="username"type="text" placeholder="請輸入姓名或用戶名" formControlName="username">
+                </div>
+                <div class="">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <input class="email" type="text" placeholder="請輸入Email" formControlName="email">
+                </div>
+                <div class="">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <input class="phonenum" type="text" placeholder="請輸入連絡電話" formControlName="phonenum">
+                </div>
+                <div class="">
+                    <span><i class="fa-solid fa-file-pen"></i></span>
+                    <input class="topic"type="text" placeholder="請輸入訊息主題"formControlName="topic">
+                </div>
+                <textarea name="lines" placeholder="請填寫您的意見內容" formControlName="message"></textarea>
+            </div>
+            <div class="consent">
+                <input type="checkbox" id="check" formCont  rolName="check">
+                <label for="check">我已閱讀並同意隱私權與各資保護聲明</label>
+            </div>
+            <button (click)="sendForm()" [disabled]="contactForm.status==='VALID'">   確認送出</button>
+        </form>
+    </div>
+</div>

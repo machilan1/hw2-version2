@@ -1,0 +1,12 @@
+<header>
+  <app-header [isOnTop] ="onTop"></app-header>
+</header>
+
+<div class="router-outlet" [classList]="onTop? 'router-outlet-expand':'router-outlet'">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+
+  <div class="footer-text">因為愛他，所以浪花。</div>
+</footer>
