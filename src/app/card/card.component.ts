@@ -13,7 +13,6 @@ export class CardComponent implements OnInit{
   
   @Input() card!:Card;
   @Input() atHome!:boolean;
-  type:string= this.atHome? 'home':'product'
   
   ngOnInit(): void {
   }

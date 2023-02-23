@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './widget-cart.component.html',
   styleUrls: ['./widget-cart.component.scss']
 })
-export class WidgetCartComponent implements Object{
+export class WidgetCartComponent{
 
   ngOnInit(): void {
     
