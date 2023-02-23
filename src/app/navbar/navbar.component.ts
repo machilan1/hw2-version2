@@ -1,6 +1,8 @@
 import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavtagComponent } from '../navtag/navtag.component';
+
+
 export interface Subtag{
   subtag:string;
   link:string;

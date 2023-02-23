@@ -11,10 +11,14 @@ import { CommonModule } from '@angular/common';
 
 
 export class NavtagSideComponent implements OnInit{
+
+
   @Input() tag:any
 
   isOpen:boolean=false
   subHeight:string=''
+
+  
   setHeight(){
     this.subHeight =`${this.tag.subtags.length*43}px`
   }

@@ -14,6 +14,7 @@ export class AppComponent implements OnInit{
   onTop =true;
 
   ngOnInit(): void {
+    
     window.addEventListener("scroll",()=>{
       if(document.documentElement.scrollTop>20){
      this.onTop=false;
